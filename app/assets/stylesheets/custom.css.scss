@@ -1,7 +1,12 @@
-@import "bootstrap";
+/*Colors palette*/
+$midnightBlue: #2c3e50;
+$clouds: #ecf0f1;
+$asbestos: #7f8c8d;
+$turquoise: #1abc9c;
+
 
 body{
-	padding-top: 60px;
+	
 }
 
 /* typography */
@@ -11,9 +16,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 2.3em;
   letter-spacing: -2px;
   margin-bottom: 30px;
+  font-family: 'pt_sans_narrowbold';
+  color: $midnightBlue;
 }
 
 h2 {
@@ -22,34 +29,70 @@ h2 {
   margin-bottom: 30px;
   font-weight: normal;
   color: #999;
+  font-family: 'pt_sans_narrowregular';
 }
 
 p {
   font-size: 1.1em;
   line-height: 1.7em;
+  margin-left: 0px;
+}
+
+
+.container{
+	padding-left: 50px;
+	padding-right: 50px;
+	position: relative;
+}
+
+.main{
+	padding-top: 50px;
+	min-height: 800px;
 }
 
 
 /* header */
+.navbar{
+	background: $midnightBlue;
+	min-height: 50px;
+}
+.nav{
+	float: right;
+	margin-top: 15px;
+	li {
+		display: inline;
+	}
+	li a{
+		color: $turquoise;
+		margin-left: 10px;
+	}
+}
 
 #logo {
   float: left;
-  margin-right: 10px;
+  margin-top: 3px;
   font-size: 1.7em;
-  color: #fff;
-  text-transform: uppercase;
+  color: $clouds;
+  /*text-transform: uppercase;*/
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
   line-height: 1;
+  font-family: 'roseregular';
+  &:hover {
+  	color: #fff;
+  	text-decoration: none;
+  }
 }
 
-#logo:hover {
-  color: #fff;
-  text-decoration: none;
-}
+
 
 /* footer */
+.footer-fixed-bottom{
+	position: fixed;
+	width: 100%;
+	bottom: 10px;
+}
 
 footer {
   margin-top: 45px;
@@ -64,6 +107,11 @@ footer {
   }
   small {
     float: left;
+    font-size: 1.0em;
+    font-family: 'roseregular';
+    color: black;
+    font-weight: normal;
+    display: block;
   }
   ul {
     float: right;
