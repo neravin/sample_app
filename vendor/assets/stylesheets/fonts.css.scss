@@ -24,7 +24,7 @@
 
 }*/
 
-/*@font-face {
+@font-face {
     font-family: 'roseregular';
     src: url('<%= asset_path 'rose-webfont.eot' %>)';
     src: url('<%= asset_path 'rose-webfont.eot?#iefix' %>') format('embedded-opentype'),
@@ -34,8 +34,8 @@
     font-weight: normal;
     font-style: normal;
 
-}*/
-@font-face {
+}
+/*@font-face {
     font-family: 'roseregular';
     src: url(font-path('rose-webfont.eot'));
     src: url(font-path('rose-webfont.eot') + "?#iefix") format('embedded-opentype'),
@@ -45,7 +45,7 @@
     font-weight: normal;
     font-style: normal;
 
-}
+}*/
 
 
 @font-face {
