@@ -29,5 +29,9 @@ module SampleApp
     # fonts
     config.assets.paths << Rails.root.join('vendor', 'assets', 'fonts')
     config.assets.precompile += %w(.svg .eot .woff .ttf)
+    config.assets.precompile += ["fontawesome-webfont.ttf",
+                         "fontawesome-webfont.eot",
+                         "fontawesome-webfont.svg",
+                         "fontawesome-webfont.woff"]
   end
 end
